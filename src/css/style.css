@@ -1,13 +1,14 @@
-*{
-    border:1px solid #c2c2c2;
-  }
+
   
   body {
     
-    
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     
   }
-  header, main, section, footer {
+main, footer {
     padding:1rem;
   }
   #wrap {
@@ -20,15 +21,108 @@
     row-gap:2rem;
   }
   
-  header {
-    display:flex;
-    justify-content:space-between;
+.flex{
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+
+  header { 
     padding:1rem;
   }
   header .logo {
-    max-width:100px;
-    height:auto;
+    height: 30px;
   }
+  header .profiles  {
+    height: 50px;
+  }
+
+  header nav {
+  
+    gap:1rem;
+  }
+
+  header nav a {
+    text-decoration: none;
+    color:#000;
+  }
+
   header .search {
     margin-right:3rem;
   }
+
+  header .right {
+gap:1rem;
+  }
+
+  header .right.search {
+    position: relative;
+      }
+
+      header .right.search i {
+        position: absolute;
+        right: 10px;
+        top:50%; 
+        transform: translateY(-50%);
+        cursor:pointer;
+          }
+
+  header .right.profile {
+    gap:1rem;
+      }
+      
+      main {
+        background-image: url("/src/images/himym.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color:#fff;
+        padding: 5rem 3rem;
+      }
+
+      .hero-content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+      }
+      .btn-lg {
+        background-color: red;
+        color:white;
+        padding:5px 10px;
+        font-size:1rem;
+
+      }
+      .suggestion-row {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+      }
+      .suggestion-row s.header {
+        display: flex;
+        justify-content: space-between;
+       
+      }
+      .suggestion-row h2 {
+        font-size: 0.9 rem;
+      }
+
+      .suggestion-row a {
+        font-size: 0.8 rem;
+      }
+
+      .suggestion-content {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 4rem;
+      }
+      .suggestion-content .item{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        border:2px solid #c2c2c2;
+        padding:2rem 3rem 2rem 1rem;
+        width:20%;
+        background-color: gainsboro;
+      }
+      

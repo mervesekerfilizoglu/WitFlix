@@ -12,27 +12,41 @@
 <body>
    
     <div id="wrap">
-        <header>
+        <header class="flex">
           
         <img src="./src/images/WitFlix.png" alt="Witfix Logo" class="logo">
-          <nav>
+          <nav class="flex">
             <a href="">Topic 1</a>
             <a href="">Topic 2</a>
             <a href="">Topic 3</a>
             <a href="">Topic 4</a>
           </nav>
+           <div class="right flex">
             <div class="search">
-              <input type="text" placeholder="Search">
-              <i class="fa-solid fa-bell"></i>
-               <img src="./src/images/cat.png"></i>" alt="Profil resmi" class="profile">
-            </div>
+                <input type="text" placeholder="Search">
+                <i class="fa-solid fa-search"></i>
+              </div>
+              <div class="profile flex">
+                  <i class="fa-solid fa-bell"></i>
+                 <img src="./src/images/cat.png" alt="Profil resmi" class="profiles">
+              </div>
+           </div>
         
         </header> 
 
+
+
         <main>Main Tag 
             <div class="hero-content">
-                <h1>MOVIE NAME</h1>
+                <h1>How I Meet Your Mother</h1>
                 <div class="movie-info">
+                    <span class="user-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </span>
                     <div class="user-retings">
                         <span class="user-rating">User Rating: 8.5</span>
                         <span class="imdb-rating">9.2 IMDM</span>
@@ -40,16 +54,16 @@
                     <span class="maturity-rating"> </span>
                     <span class="duration"> </span>
                 </div>
-                <p> </p>
+                <p> A father recounts to his children - through a series of flashbacks - the journey he and his four best friends took leading up to him meeting their mother. </p>
                 <ul class="movie-details">
-                    <li><span>Starring</span></li>
-                    <li><span>Genre</span></li>
-                    <li><span>Tags</span></li>
+                    <li><span class="label">Starring: Josh RadnorJason SegelCobie Smulders</span></li>
+                    <li><span class="label">Genre: Carter BaysCraig Thomas</span></li>
+                    <li><span class="label">Tags: Romantic Comedy</span></li>
                 </ul>
 
                 <div class="btn btn-lg">
                     <button>
-                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-play"></i>
                     Play Now
                 </button>
                   </div>
@@ -58,33 +72,92 @@
         </main>
 
 
+
+
         <section> 
-            <div class="suggestion-row"></div>
-            <div class="suggestion-row"></div>
             <div class="suggestion-row">
-                <div class="suggestion-title">
-                    <h2>Popular Movies</h2>
-                    <a></a>
-                </div>
-
-                <div class="suggestion-content">
-                    <div class="suggestion-item">
-                        <div class="suggestion-item-content">
-                            <h3></h3>
-                            <div class="suggestion-details"></div>
-                            <div class="btn btn-lg">
-                                <button>
-                                <i class="fa-brands fa-youtube"></i>
-                                Play Now
-                            </button>
-                              </div>
-
-                        </div>
-                    </div>
-                    <div class="suggestion-item"></div>
-                    <div class="suggestion-item"></div>
-                </div>
+                <div class="s-header">
+                <h2>Popular Movies</h2>
+                <a href="">View All <aL></aL></a>
             </div>
+            <div class="suggestion-content">
+                <div class="item">
+                    <h3> Movie Name </h3>
+                    <div class="detail">  </div>
+                    <span class="maturity-rating" >16+</span>
+                    <span class="duration" >2 h 20 min</span>
+                </div>
+                    <div> Play Now</div> 
+                </div>
+
+
+                <div class="suggestion-row">
+                    <div class="s-header">
+                    <h2>Popular Movies</h2>
+                    <a href="">View All <aL></aL></a>
+                </div>
+                <div class="suggestion-content">
+                    <div class="item">
+                        <h3> Movie Name </h3>
+                        <div class="detail">  </div>
+                        <span class="maturity-rating" >16+</span>
+                        <span class="duration" >2 h 20 min</span>
+                    </div>
+                        <div> Play Now</div> 
+                    </div>
+
+
+
+                    <div class="suggestion-row">
+                        <div class="s-header">
+                        <h2>Popular Movies</h2>
+                        <a href="">View All <aL></aL></a>
+                    </div>
+                    <div class="suggestion-content">
+                        <div class="item">
+                            <h3> Movie Name </h3>
+                            <div class="detail">  </div>
+                            <span class="maturity-rating" >16+</span>
+                            <span class="duration" >2 h 20 min</span>
+                        </div>
+                            <div> Play Now</div> 
+                        </div>
+
+
+
+
+                        <div class="suggestion-row">
+                            <div class="s-header">
+                            <h2>Popular Movies</h2>
+                            <a href="">View All <aL></aL></a>
+                        </div>
+                        <div class="suggestion-content">
+                            <div class="item">
+                                <h3> Movie Name </h3>
+                                <div class="detail">  </div>
+                                <span class="maturity-rating" >16+</span>
+                                <span class="duration" >2 h 20 min</span>
+                            </div>
+                                <div> Play Now</div> 
+                            </div>
+
+
+                            <div class="suggestion-row">
+                                <div class="s-header">
+                                <h2>Recommended For You</h2>
+                                <a href="">View All <aL></aL></a>
+                            </div>
+                            <div class="suggestion-content">
+                                <div class="item">
+                                    <h3> Movie Name </h3>
+                                    <div class="detail">  </div>
+                                    <span class="maturity-rating" >16+</span>
+                                    <span class="duration" >2 h 20 min</span>
+                                </div>
+                                    <div> Play Now</div> 
+                                </div>
+        
+        
         </section>
 
 
