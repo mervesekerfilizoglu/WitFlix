@@ -33,9 +33,11 @@ main, footer {
   }
   header .logo {
     height: 30px;
+    
   }
   header .profiles  {
     height: 50px;
+    margin-left: 3rem;
   }
 
   header nav {
@@ -82,32 +84,47 @@ gap:1rem;
       }
 
       .hero-content {
+        
         display: flex;
         flex-direction: column;
         row-gap: 1rem;
+        font-size: 25px;
+        font-weight: 500;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       }
+    
       .btn-lg {
+      display: inline-block;
         background-color: red;
         color:white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         padding:5px 10px;
         font-size:1rem;
-
+        width: fit-content;
+        border-radius: 5px;
+        border:none;
+        vertical-align:middle;
+        cursor: pointer;
+        text-align: center
+        
       }
+
       .suggestion-row {
         display: flex;
         flex-direction: column;
         row-gap: 1rem;
       }
-      .suggestion-row s.header {
+      .suggestion-row .s-header {
         display: flex;
         justify-content: space-between;
-       
       }
+
       .suggestion-row h2 {
         font-size: 0.9 rem;
       }
 
       .suggestion-row a {
+        text-decoration: none;
         font-size: 0.8 rem;
       }
 
@@ -123,6 +140,33 @@ gap:1rem;
         border:2px solid #c2c2c2;
         padding:2rem 3rem 2rem 1rem;
         width:20%;
-        background-color: gainsboro;
+        
       }
-      
+   
+footer {
+
+  display: flex;
+  flex-direction: row;
+ 
+  
+
+
+}
+.logo {
+  display:flex;
+  flex-direction: row;
+  width: 100px;
+  margin: 1px;
+  padding:3px 3px;
+}
+.apps {
+  display: flex;
+  flex-direction: row;
+  width: 100px;
+}
+.copyright-details {
+  display: flex;
+  
+  flex-direction: row;
+
+}
