@@ -140,33 +140,141 @@ gap:1rem;
         border:2px solid #c2c2c2;
         padding:2rem 3rem 2rem 1rem;
         width:20%;
+        background-color: darkgrey;
+        position:relative;
         
       }
+
+
+
+
+
+      .suggestion-content .item img {
+        width: 100%;
+      }
+      .suggestion-content .item .item-content {
+position:absolute;
+    top: 10px;
+    left: 10px;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+      }
+
    
 footer {
 
   display: flex;
-  flex-direction: row;
- 
-  
-
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: grey;
+  align-items: flex-start;
+  padding: 15px;
+  font-size: 15px;
+  color:white;
 
 }
-.logo {
-  display:flex;
+
+.footer-helps {
+  width: 60;
+  padding-right:1rem;
+}
+
+.footer-helps nav {
+  display: flex;
   flex-direction: row;
-  width: 100px;
-  margin: 1px;
-  padding:3px 3px;
+  justify-content: space-between;
+}
+.footer-helps a {
+  text-decoration: none;
+  color:white;
+  transition:color 0.2s;
+}
+
+.footer-helps a:hover {
+color:blue;
+}
+
+.footer-helps p {
+  margin-top: 2vh;
+}
+.footer-socials {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer-socials p {
+  margin-bottom: 1.2vh;
+  font-weight: bold;
+}
+.footer-socials img {
+  width:30px;
+  height: 26px;
+  margin: 4px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: transparent;
+}
+.view-all {
+  display: card-container;
+  justify-items: end;
+  margin: auto;
+  margin-right: 1vh;
 }
 .apps {
   display: flex;
-  flex-direction: row;
-  width: 100px;
+  flex-direction: column;
+  align-items: flex-start;
 }
-.copyright-details {
-  display: flex;
-  
-  flex-direction: row;
+.apps p {
+  margin-bottom: 1vh;
+  font-weight: bold;
+}
+.apps img {
+  width: 120 px;
+  height: auto;
+  margin: 5px 0;
+  display: inline-block;
+}
+.section-header {
+display: flex;
+}
+.section-header a {
+  margin-top: 30px;
+}
 
+
+@media(max-width:500px) {
+  header {
+    position:relative;
+  }
+
+  header nav{
+  position:absolute;
+  top:50%;
+  left:50%;
+  }
+  section {
+    padding: 1rem;
+  }
+  .suggestion-content {
+    flex-wrap: wrap;
+  }
+  .suggestion-content .item {
+    width: 45%;
+    margin-bottom: 1rem;
+  }
+  footer {
+    flex-wrap: wrap;
+  }
+  .footer-helps {
+    width:100%;
+    margin-bottom: 1.5 rem;
+  }
+  .social-icons {
+    display: flex;
+  }
+
+  
 }
